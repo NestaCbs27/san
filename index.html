@@ -1,75 +1,94 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="manifest" href="manifest.json" />
-    <!-- ios support -->
-    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#2f92cf" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#2f92cf" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#fff" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>SAN</title>
-  </head>
-  <body>
-    <main>
+  <meta name="theme-color" content="#fff" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>SAN</title>
+</head>
+<body>
+  <main>
     
-      <div class="title-container newContainer">
-          <h1>Nouveau match</h1>
-      </div>
+    <div class="title-new-container newContainer">
+      <h1>Nouveau match</h1>
+    </div>
     
     <div class="container newContainer">
-		<input type="text" class="form-control input-player" placeholder="Joueur 1" id="J1">
-		<br>
-		<input type="text" class="form-control input-player" placeholder="Joueur 2" id="J2">
-		<br>
-		<button class="btn btn-primary">Valider</button>
-			
-
-      </div>
-	   <div class="container currentContainer">
-
-		Current
-			
-
-      </div>
-	   <div class="container listContainer">
-
-		Liste
-			
-
-      </div>
-      <div class="nav">
-	  <table class="table-nav">
-		  <tr>
-			  <td  onclick="javascript:navigation('new')" id="new">
-				<i class="bi bi-plus-circle" style="font-size:20px; "></i><br><span class="nav-label">Nouveau</span>
-			  </td>
-			  <td onclick="javascript:navigation('current')" id="current">
-				<i class="bi bi-flag" style="font-size:20px;"></i><br><span class="nav-label">En cours</span>
-			  </td>
-			  <td onclick="javascript:navigation('list')" id="list">
-				<i class="bi bi-list" style="font-size:20px;"></i><br><span class="nav-label">Liste</span>
-			  </td>
-		  </tr>
-	  </table>
-        
-        
-        
+        <input type="text" class="form-control input-player" placeholder="Joueur 1" id="J1">
+        <br>
+        <input type="text" class="form-control input-player" placeholder="Joueur 2" id="J2">
+        <br>
+        <button class="btn btn-primary">Valider</button>
     </div>
-    </main>
-    <script src="js/app.js"></script>
 
-  </body>
+
+    <div class="title-current-container currentContainer">
+      <table class="table-score">
+        <tr>
+          <td>Joueur 1</td>
+          <td>Joueur 2</td>
+        </tr>
+        <tr>
+            <td style="font-size : 3.5em;">0</td>
+            <td style="font-size : 3.5em;">0</td>
+          </tr>
+      </table>
+    </div>
+
+    <div class="container currentContainer">
+      <span class="label-action">SERVICE</span>
+      <br><br>
+        <table class="table-action">
+            <tr>
+                <td><button class="btn btn-primary btn-action">Joueur 1</button></td>
+                <td><button class="btn btn-primary btn-action">Joueur 2<br></button></td>
+            </tr>
+          </table>
+    </div>
+
+    <div class="title-list-container listContainer">
+        <h1>Liste des matchs</h1>
+      </div>
+
+    <div class="container listContainer">
+      
+    </div>
+    <div class="nav">
+      <table class="table-nav">
+        <tr>
+          <td  class="nav-td" onclick="javascript:navigation('new')" id="new">
+            <i class="bi bi-plus-circle" style="font-size:20px; "></i><br><span class="nav-label">Nouveau</span>
+          </td>
+          <td  class="nav-td" onclick="javascript:navigation('current')" id="current">
+            <i class="bi bi-flag" style="font-size:20px;"></i><br><span class="nav-label">En cours</span>
+          </td>
+          <td  class="nav-td" onclick="javascript:navigation('list')" id="list">
+            <i class="bi bi-list" style="font-size:20px;"></i><br><span class="nav-label">Liste</span>
+          </td>
+        </tr>
+      </table>
+      
+      
+      
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+  
+</body>
 </html>

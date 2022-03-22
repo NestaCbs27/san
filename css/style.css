@@ -32,7 +32,7 @@ main {
     border-top-right-radius: 20px;
   }
 
-  .title-container {
+  .title-new-container {
     padding: 5;
     color: #fff;
     margin-top : 15%;
@@ -40,6 +40,22 @@ main {
     font-weight: bold;
     margin-left: 10px
   }
+
+  .title-current-container {
+    padding: 5;
+    color: #fff;
+    margin-top : 15%;
+  }
+
+  .title-list-container {
+    padding: 5;
+    color: #fff;
+    margin-top : 15%;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px
+  }
+
 
   .nav {
     display: grid;
@@ -63,6 +79,27 @@ main {
     font-size : 0.8em;
   }
 
+  .table-score{
+    width: 100%;
+    text-align : center;
+    color : #fff;
+  }
+
+  .table-action{
+    width: 100%;
+    text-align : center;
+  }
+
+  .label-action{
+    color : #2f92cf;
+    font-size: 2em;
+  }
+
+ .btn-action{
+    height: 80px;
+    width: 80%;
+  }
+
 .input-player{
     background-color: #2f2f2f;
     border: none;
@@ -75,7 +112,7 @@ main {
   border-bottom: 1px solid #2f92cf;
 }
   
-td {
+.nav-td {
   padding-top: 10px;
   width: 200px;
 }
