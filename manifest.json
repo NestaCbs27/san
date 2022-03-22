@@ -3,8 +3,8 @@
     "short_name": "SAN",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#fff",
-    "theme_color": "#fff",
+    "background_color": "#2f92cf",
+    "theme_color": "#2f92cf",
     "orientation": "portrait-primary",
     "icons": [
       {

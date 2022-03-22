@@ -26,10 +26,19 @@ main {
     background-color: #2f2f2f;;
     bottom: 0;
     position: fixed;
-    height: 700px;
+    height: 500px;
     color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+  }
+
+  .title-container {
+    padding: 5;
+    color: #fff;
+    margin-top : 10%;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px
   }
 
   .nav {
@@ -42,7 +51,7 @@ main {
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 140px;
+    height: 110px;
   }
 
   .table-nav{
@@ -58,6 +67,12 @@ main {
     background-color: #2f2f2f;
     border: none;
     border-bottom: 1px solid #2f92cf;
+}
+
+.form-control:focus{
+  background-color: #2f2f2f;
+  border: none;
+  border-bottom: 1px solid #2f92cf;
 }
   
 td {
