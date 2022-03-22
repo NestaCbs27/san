@@ -25,9 +25,9 @@
     <main>
       <div class="container newContainer">
 
-		<input type="text" class="form-control" placeholder="Joueur 1" id="J1">
+		<input type="text" class="form-control input-player" placeholder="Joueur 1" id="J1">
 		<br>
-		<input type="text" class="form-control" placeholder="Joueur 2" id="J2">
+		<input type="text" class="form-control input-player" placeholder="Joueur 2" id="J2">
 		<br>
 		<button class="btn btn-primary">Valider</button>
 			
@@ -46,16 +46,16 @@
 
       </div>
       <div class="nav">
-	  <table style="text-align: center; height : 80px; width: 100%">
+	  <table class="table-nav">
 		  <tr>
 			  <td  onclick="javascript:navigation('new')" id="new">
-				<i class="bi bi-plus-circle" style="font-size:40px; "></i>
+				<i class="bi bi-plus-circle" style="font-size:20px; "></i><br><span class="nav-label">Nouveau</span>
 			  </td>
 			  <td onclick="javascript:navigation('current')" id="current">
-				<i class="bi bi-flag" style="font-size:40px;"></i>
+				<i class="bi bi-flag" style="font-size:20px;"></i><br><span class="nav-label">En cours</span>
 			  </td>
 			  <td onclick="javascript:navigation('list')" id="list">
-				<i class="bi bi-list" style="font-size:40px;"></i>
+				<i class="bi bi-list" style="font-size:20px;"></i><br><span class="nav-label">Liste</span>
 			  </td>
 		  </tr>
 	  </table>

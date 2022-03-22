@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #000;
+  background: #2f92cf;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   max-width: 900px;
@@ -16,8 +16,20 @@ main {
   text-align: center;
 }
 
+.btn-primary{
+  background-color: #2f92cf;
+}
+
 .container {
-    padding: 5;
+    padding: 20;
+    padding-top: 30; 
+    background-color: #2f2f2f;;
+    bottom: 0;
+    position: fixed;
+    height: 700px;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .nav {
@@ -25,19 +37,38 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 1rem;
     justify-content: center;
-    align-items: center;
     margin: auto;
-    background-color: #000;
-    box-shadow: 0 8px 6px -6px #999;
+    background-color: #151515;
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 140px;
   }
+
+  .table-nav{
+    text-align: center; 
+    height : 80px; 
+    width: 100%; 
+    background-color: #151515;
+    color : white;
+    font-size : 0.8em;
+  }
+
+.input-player{
+    background-color: #2f2f2f;
+    border: none;
+    border-bottom: 1px solid #2f92cf;
+}
   
+td {
+  padding-top: 10px;
+  width: 200px;
+}
+
+
   .active{
-	  border-top : 6px solid #007bff; 
-	  color: #007bff
+	  border-top : 2px solid #2f92cf; 
+	  color: #2f92cf
   }
   
   .hidden {
