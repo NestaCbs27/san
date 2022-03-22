@@ -23,10 +23,10 @@ main {
 .container {
     padding: 20;
     padding-top: 30; 
-    background-color: #2f2f2f;;
+    background-color: #2f2f2f;
     bottom: 0;
     position: fixed;
-    height: 500px;
+    height: 650px;
     color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -35,7 +35,7 @@ main {
   .title-container {
     padding: 5;
     color: #fff;
-    margin-top : 10%;
+    margin-top : 15%;
     text-align: left;
     font-weight: bold;
     margin-left: 10px
