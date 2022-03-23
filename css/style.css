@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "arboria";
+  src: url("../font/arboria.ttf");
+}
+
 body {
-  background: #2f92cf;
+  font-family: "arboria";
+  background: linear-gradient(70deg, #2f92cf, #87c3e8);
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   max-width: 900px;
@@ -17,12 +23,13 @@ main {
 }
 
 .btn-primary{
-  background-color: #2f92cf;
+  background: linear-gradient(70deg, #2f92cf, #87c3e8);
+  border : none;
 }
 
 .container {
     padding: 20;
-    padding-top: 30; 
+    padding-top: 40; 
     background-color: #2f2f2f;
     bottom: 0;
     position: fixed;
@@ -91,8 +98,8 @@ main {
   }
 
   .label-action{
-    color : #2f92cf;
-    font-size: 2em;
+    color : #fff;
+    font-size: 1.8em;
   }
 
  .btn-action{
@@ -100,16 +107,26 @@ main {
     width: 80%;
   }
 
+  .btn-start-match{
+    height: 40px;
+    width: 100%;
+  }
+
+  .btn-start-game{
+    height: 40px;
+    width: 90%;
+  }
+
 .input-player{
     background-color: #2f2f2f;
     border: none;
-    border-bottom: 1px solid #2f92cf;
+    border: 1px solid #87c3e8;
 }
 
 .form-control:focus{
   background-color: #2f2f2f;
   border: none;
-  border-bottom: 1px solid #2f92cf;
+  border-bottom: 1px solid #87c3e8;
 }
   
 .nav-td {
@@ -119,8 +136,8 @@ main {
 
 
   .active{
-	  border-top : 2px solid #2f92cf; 
-	  color: #2f92cf
+	  border-top : 2px solid #87c3e8; 
+	  color: #87c3e8
   }
   
   .hidden {
