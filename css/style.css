@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +64,10 @@ main {
     margin-left: 10px
   }
 
+  .error{
+    color : #cc0000;
+  }
+
 
   .nav {
     display: grid;
@@ -104,16 +109,21 @@ main {
 
  .btn-action{
     height: 80px;
-    width: 80%;
+    width: 150px;
+  }
+
+  .btn-action-active{
+    outline: 2px solid white;
+    outline-offset: 3px;
   }
 
   .btn-start-match{
-    height: 40px;
+    height: 50px;
     width: 100%;
   }
 
   .btn-start-game{
-    height: 40px;
+    height: 50px;
     width: 90%;
   }
 
@@ -121,6 +131,7 @@ main {
     background-color: #2f2f2f;
     border: none;
     border: 1px solid #87c3e8;
+    color : #fff;
 }
 
 .form-control:focus{
