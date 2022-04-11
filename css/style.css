@@ -12,7 +12,7 @@
 
 body {
   font-family: "arboria";
-  background: linear-gradient(70deg, #2f92cf, #87c3e8);
+  background:  #2f92cf;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   max-width: 900px;
@@ -127,6 +127,11 @@ main {
     width: 90%;
   }
 
+  .btn-disabled{
+    background: linear-gradient(70deg, gray, #bcbcbc);
+    border : none;
+  }
+
 .input-player{
     background-color: #2f2f2f;
     border: none;
@@ -146,14 +151,18 @@ main {
 }
 
 
-  .active{
-	  border-top : 2px solid #87c3e8; 
-	  color: #87c3e8
-  }
+.active{
+  border-top : 2px solid #87c3e8; 
+  color: #87c3e8
+}
+
+.disabledMenu{
+  color: gray;
+}
+
+.hidden {
   
-  .hidden {
-	  
-	 display :none;
-	 
-  }
+  display :none;
+  
+}
  

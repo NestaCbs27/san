@@ -61,16 +61,19 @@
                 <td><button class="btn btn-primary btn-action"><span class="J2Name"></span></button></td>
             </tr>
           </table>
-          <br><br>
+          <br>
           <span class="label-action">COTÉ</span>
       <br><br>
         <table class="table-action">
             <tr>
-                <td><button class="btn btn-primary btn-action">Gauche</button></td>
-                <td><button class="btn btn-primary btn-action btn-action-active">Droite<br></button></td>
+                <td><button class="btn btn-primary btn-action" id="btnG" onclick="javascript:selectCote('btnG')">Gauche</button></td>
+                <td><button class="btn btn-primary btn-action" id="btnD" onclick="javascript:selectCote('btnD')">Droite<br></button></td>
             </tr>
-          </table><br><br><br>
-          <button class="btn btn-primary btn-start-game">Commencer le jeu</button>
+          </table><br>
+          <button class="btn btn-primary btn-start-game btn-disabled" onclick="javascript:startGame()">Commencer le jeu</button>
+		  <br><br>
+		  <button class="btn btn-primary btn-start-game" onclick="javascript:cancelMatch()">Annuler le match</button>
+
     </div>
 
     <div class="title-list-container listContainer">
